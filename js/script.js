@@ -1,4 +1,4 @@
-//1:- Find The Largest Number
+//1: Find The Largest Number
 //Nested if statement
 
 /*
@@ -27,7 +27,7 @@ if(n1 >= n2) {
 }
 */
 /*
-//Switch
+//2: Switch
 
 console.log("Select an option:\na. Option 1 \nb. Option 2 \nc. Option 3 ");
 
@@ -54,7 +54,7 @@ switch (choice) {
 console.log(text);
 */
 
-//Student Grade Calculation
+//3: Student Grade Calculation
 /*
 var number = prompt("what is your number?");
 number = parseInt(number);
@@ -79,4 +79,49 @@ if (number <= 100 && number >=80 ) {
 }
 console.log("Your Grade: " + grade);
 
+*/
+//4: Simple Calculator
+/*
+console.log("Select an Option: \n1. Add \n2. Subtract\n3. Multiply \n4. Divide");
+
+var num1 = prompt("Enter First Number: ");
+var num2 = prompt("Enter Second Number: ");
+var option = prompt("Choose an Operation: ");
+var result = null;
+
+num1 = parseInt(num1);
+num2 = parseInt(num2);
+option = parseInt(option);
+
+var num1Con = isNaN(num1);
+var num2Con = isNaN(num2);
+var optionCon = isNaN(option);
+
+if (num1Con || num2Con || optionCon) {
+    console.log("Invalid Input!");
+}else {
+    switch (option) {
+        case 1:
+            result = num1 + num2;
+            break;
+        case 2:
+            result = num1 - num2;
+            break;
+        case 3:
+            result = num1 * num2;
+            break;
+        case 4:
+            result = num1 / num2;
+            break;
+        default:
+            break;
+
+    }
+    if (result == null) {
+        console.log("No Result!");
+    }
+    else{
+        console.log("Result: " + result);
+    }
+}
 */
