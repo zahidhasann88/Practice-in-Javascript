@@ -176,3 +176,54 @@ function signIn(user, pass) {
 
 signIn(userNamePrompt, passwordPrompt);
 */
+//7: Build Facebook-2
+/*
+var database = [
+    {
+        username: "zahid",
+        password: "supersecret"
+    },
+    {
+        username: "Rima",
+        password: "123"
+    },
+    {
+        username: "Sima",
+        password: "777"
+    }
+
+];
+
+var newsFeed = [
+    {
+        username: "Bobby",
+        timeline: "So tired from all that learning!"
+    },
+    {
+        username: "Rina",
+        timeline: "Javascript is soooo coool!"
+    }
+];
+
+function isUserValid(username, password) {
+    for (var i=0; i < database.length; i++) {
+        if (database[i].username === username && database[i].password === password) {
+            return true;
+        }
+    }
+    return false;
+}
+
+var userNamePrompt = prompt("What's your username?");
+var passwordPrompt = prompt("What's your password?");
+
+function signIn(username, password) {
+    if (isUserValid(username, password)) {
+        console.log(newsFeed);
+    } else {
+        alert("Sorry, wrong username and password!");
+    }
+}
+
+signIn(userNamePrompt, passwordPrompt);
+*/
